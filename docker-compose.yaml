@@ -1,0 +1,9 @@
+version: 3.8
+services:
+  carlos-app-test:
+    image: carlos-app:v1
+    build: .
+    container_name: carlos-c1
+    ports: # please use any port between 1024-600000
+    - "4321:89"
+    restart: always
